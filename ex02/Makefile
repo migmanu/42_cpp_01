@@ -1,5 +1,5 @@
 #OBJS specifies which files to compile as part of the project
-OBJS = main.cpp zombieHorde.cpp Zombie.cpp
+OBJS = main.cpp 
 
 #CC specifies which compiler we're using
 CC = g++
@@ -12,7 +12,7 @@ COMPILER_FLAGS = -Werror -Wextra -Wall -g
 LINKER_FLAGS = 
 
 #OBJ_NAME specifies the name of our exectuable
-OBJ_NAME = zombies
+OBJ_NAME = brain
 
 #This is the target that compiles our executable
 all : $(OBJS)
