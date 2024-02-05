@@ -19,4 +19,7 @@ class	Zombie
 		Zombie(void);
 };
 
+Zombie*	newZombie(const std::string& new_name);
+void	randomChump(const std::string& new_name);
+
 #endif
