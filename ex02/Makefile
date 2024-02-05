@@ -12,7 +12,7 @@ COMPILER_FLAGS = -Werror -Wextra -Wall -g
 LINKER_FLAGS = 
 
 #OBJ_NAME specifies the name of our exectuable
-OBJ_NAME = brain
+OBJ_NAME = exec
 
 #This is the target that compiles our executable
 all : $(OBJS)
