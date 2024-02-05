@@ -1,5 +1,5 @@
 #OBJS specifies which files to compile as part of the project
-OBJS = main.cpp newZombie.cpp randomChump.cpp Zombie.cpp
+OBJS = main.cpp zombieHorde.cpp Zombie.cpp
 
 #CC specifies which compiler we're using
 CC = g++
