@@ -23,3 +23,4 @@ clean :
 
 re : clean all
 
+.PHONY : all
