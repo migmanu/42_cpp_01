@@ -6,7 +6,7 @@
 /*   By: jmigoya- <jmigoya-@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/06 13:28:42 by jmigoya-          #+#    #+#             */
-/*   Updated: 2024/02/06 23:10:54 by jmigoya-         ###   ########.fr       */
+/*   Updated: 2024/02/08 16:22:38 by jmigoya-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,15 +23,15 @@ Harl::Harl(void)
 	code_arr[1] = "info";
 	code_arr[2] = "warning";
 	code_arr[3] = "error";
-	return ;
+	return;
 }
 
 Harl::~Harl(void)
 {
-	return ;
+	return;
 }
 
-void	Harl::complain(std::string level)
+void Harl::complain(std::string level)
 {
 	for (int i = 0; i < 4; i++)
 	{
@@ -41,41 +41,34 @@ void	Harl::complain(std::string level)
 			return;
 		}
 	}
-	std::cout
-		<< std::endl
-		<< "No match found!"
-		<< std::endl;
+	std::cout << std::endl << "No match found!" << std::endl;
 	return;
 }
 
-void	Harl::debug(void)
+void Harl::debug(void)
 {
-	std::cout
-		<< "DEBUG:" << std::endl
-		<< "I love having extra bacon for my 7XL-double-cheese-triple-pickle-specialketchup burger. I really do!"
-		<< std::endl;
+	std::cout << "DEBUG:" << std::endl
+			  << "I love having extra bacon for my 7XL-double-cheese-triple-pickle-specialketchup burger. I really do!"
+			  << std::endl;
 }
 
-void	Harl::warning(void)
+void Harl::warning(void)
 {
-	std::cout
-		<< "WARNING:" << std::endl
-		<< " think I deserve to have some extra bacon for free. I’ve been coming for years whereas you started working here since last month."
-		<< std::endl;
+	std::cout << "WARNING:" << std::endl
+			  << " think I deserve to have some extra bacon for free. I’ve been coming for years whereas you started "
+				 "working here since last month."
+			  << std::endl;
 }
 
-void	Harl::info(void)
+void Harl::info(void)
 {
-	std::cout
-		<< "INFO:" << std::endl
-		<< "I cannot believe adding extra bacon costs more money. You didn’t put enough bacon in my burger! If you did, I wouldn’t be asking for more!"
-		<< std::endl;
+	std::cout << "INFO:" << std::endl
+			  << "I cannot believe adding extra bacon costs more money. You didn’t put enough bacon in my burger! If "
+				 "you did, I wouldn’t be asking for more!"
+			  << std::endl;
 }
 
-void	Harl::error(void)
+void Harl::error(void)
 {
-	std::cout
-		<< "ERROR:" << std::endl
-		<< "This is unacceptable! I want to speak to the manager now."
-		<< std::endl;
+	std::cout << "ERROR:" << std::endl << "This is unacceptable! I want to speak to the manager now." << std::endl;
 }

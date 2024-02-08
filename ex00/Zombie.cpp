@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Zombie.cpp                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jmigoya- <jmigoya-@student.42berlin.de>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/02/08 16:20:36 by jmigoya-          #+#    #+#             */
+/*   Updated: 2024/02/08 16:20:38 by jmigoya-         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "Zombie.hpp"
 
 Zombie::Zombie(std::string new_name)
@@ -20,8 +32,8 @@ Zombie::~Zombie(void)
 	return;
 }
 
-void	Zombie::announce(void)
+void Zombie::announce(void)
 {
-	std::cout << Zombie::name <<": BraiiiiiiinnnzzzZ..." << std::endl;
+	std::cout << Zombie::name << ": BraiiiiiiinnnzzzZ..." << std::endl;
 	return;
 }

@@ -6,13 +6,13 @@
 /*   By: jmigoya- <jmigoya-@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/06 13:28:20 by jmigoya-          #+#    #+#             */
-/*   Updated: 2024/02/06 23:10:22 by jmigoya-         ###   ########.fr       */
+/*   Updated: 2024/02/08 16:20:21 by jmigoya-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Harl.hpp"
 
-int	main(void)
+int main(void)
 {
 	Harl harl;
 

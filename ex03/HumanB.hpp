@@ -1,24 +1,34 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   HumanB.hpp                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jmigoya- <jmigoya-@student.42berlin.de>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/02/08 16:22:17 by jmigoya-          #+#    #+#             */
+/*   Updated: 2024/02/08 16:22:18 by jmigoya-         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef HUMANB_H
-# define HUMANB_H
+#define HUMANB_H
 
 #include "Weapon.hpp"
 
 class HumanB
 {
-	public:
+  public:
+	HumanB(const std::string &new_name);
+	~HumanB(void);
 
-		HumanB(const std::string& new_name);
-		~HumanB(void);
+	void attack(void);
+	void setWeapon(Weapon &new_weapon);
 
-		void	attack(void);
-		void	setWeapon(Weapon& new_weapon);
+  private:
+	HumanB(void);
 
-	private:
-
-		HumanB(void);
-
-		std::string	name;
-		Weapon* weapon;
+	std::string name;
+	Weapon *weapon;
 };
 
 #endif
