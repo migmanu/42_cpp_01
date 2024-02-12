@@ -6,7 +6,7 @@
 /*   By: jmigoya- <jmigoya-@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/08 16:22:17 by jmigoya-          #+#    #+#             */
-/*   Updated: 2024/02/08 16:22:18 by jmigoya-         ###   ########.fr       */
+/*   Updated: 2024/02/12 15:51:04 by jmigoya-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ class HumanB
 	~HumanB(void);
 
 	void attack(void);
-	void setWeapon(Weapon &new_weapon);
+	void setWeapon(Weapon *new_weapon);
 
   private:
 	HumanB(void);

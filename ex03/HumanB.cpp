@@ -6,7 +6,7 @@
 /*   By: jmigoya- <jmigoya-@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/08 16:21:52 by jmigoya-          #+#    #+#             */
-/*   Updated: 2024/02/08 16:21:53 by jmigoya-         ###   ########.fr       */
+/*   Updated: 2024/02/12 15:51:15 by jmigoya-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,9 +37,9 @@ void HumanB::attack(void)
 	return;
 }
 
-void HumanB::setWeapon(Weapon &new_weapon)
+void HumanB::setWeapon(Weapon *new_weapon)
 {
-	HumanB::weapon = &new_weapon;
+	HumanB::weapon = new_weapon;
 
 	return;
 }
