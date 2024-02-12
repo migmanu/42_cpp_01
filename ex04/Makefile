@@ -21,6 +21,4 @@ $(OBJ_NAME) : $(OBJS)
 clean : 
 	@rm $(OBJ_NAME)
 
-re : clean all
-
 .PHONY : all
