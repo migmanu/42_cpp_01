@@ -6,7 +6,7 @@
 /*   By: jmigoya- <jmigoya-@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/08 16:21:12 by jmigoya-          #+#    #+#             */
-/*   Updated: 2024/02/08 16:21:12 by jmigoya-         ###   ########.fr       */
+/*   Updated: 2024/02/12 15:45:49 by jmigoya-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,6 @@
 Zombie::Zombie(std::string new_name)
 {
 	Zombie::name = new_name;
-
-	Zombie::announce();
 
 	return;
 }
@@ -29,6 +27,7 @@ Zombie::Zombie(void)
 Zombie::~Zombie(void)
 {
 	std::cout << "Zombie " << Zombie::name << " dies!" << std::endl;
+
 	return;
 }
 
@@ -36,11 +35,12 @@ void Zombie::name_zombie(const std::string &new_name)
 {
 	Zombie::name = new_name;
 
-	Zombie::announce();
+	return;
 }
 
 void Zombie::announce(void)
 {
 	std::cout << Zombie::name << ": BraiiiiiiinnnzzzZ..." << std::endl;
+
 	return;
 }
