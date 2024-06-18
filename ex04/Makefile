@@ -1,13 +1,30 @@
-OBJS = main.cpp 
-
+CFLAGS = -Werror -Wextra -Wall -std=c++98 -g
 CC = c++
+SRCS = main.cpp
+OBJS = $(SRCS:.cpp=.o)
+EXEC = exec
 
-COMPILER_FLAGS = -Werror -Wextra -Wall -std=c++98 -g
+# Default rule
+all: $(EXEC)
 
-OBJ_NAME = exec
+# Rule to create the executable
+$(EXEC): $(OBJS)
+	@$(CC) -o $@ $^
 
-$(OBJ_NAME) : $(OBJS)
-	@$(CC) $(OBJS) $(COMPILER_FLAGS) $(LINKER_FLAGS) -o $(OBJ_NAME)
+# Rule to create object files
+%.o: %.cpp
+	@$(CC) $(CFLAGS) -c $< -o $@
 
-clean : 
-	@rm $(OBJ_NAME)
+# Rule to clean object files
+clean:
+	@rm -f $(OBJS)
+
+# Rule to clean everything
+fclean: clean
+	@rm -f $(EXEC)
+
+# Rule to recompile everything
+re: fclean all
+
+# Phony targets
+.PHONY: all clean fclean re
